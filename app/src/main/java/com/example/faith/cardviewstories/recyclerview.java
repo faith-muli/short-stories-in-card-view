@@ -18,6 +18,10 @@ public class recyclerview extends ActionBarActivity {
 
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
+        
+        RecyclerView.Adapter mAdapter;
+        mAdapter = new SimpleAdapter();
+        mRecyclerView.setAdapter(mAdapter);
     }
 
 
